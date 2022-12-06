@@ -6,13 +6,13 @@
 }
 
 .header {
-    background-color: $grisOscuro;
+    background-color: $azul;
     padding: 1rem 0 3rem 0;
 
     .barra {
         a {
             img {
-                min-width: 20rem;
+                height: 7rem;/*min-width: 20rem*/;
             }
         }
     }
