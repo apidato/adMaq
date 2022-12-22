@@ -1,17 +1,8 @@
 .footer {
-    padding: calc($separacion / 2) 0 ;
-    background-color: $grisOscuro;
-    margin-bottom: 0;
-
-    .contenedor-footer {
-        padding-top: calc($separacion / 2) 0;
-    }
-
-    .navegacion {
-        visibility: visible;
-        opacity: 1;
-        height: auto;
-    }
+    padding: 0;
+    width: 100%;
+    background-color: $azul;
+    margin: 0;
 
     .copyright {
         color: $blanco;

@@ -2,22 +2,37 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
+
 body {
     font-family: $fuente_principal;
     font-size: 1.6rem;
     line-height: 1.8;
+    background-color: $gris;
 }
+
 p {
     color: $negro;
     font-size: 2rem;
 }
+
 .contenedor {
-    width: 95%;
-    max-width: 120rem;
+    width: 98%;
     margin: 0 auto;
+}
+
+.contenedor-login {
+    width: 50%;
+    margin: 5rem auto;
+    background-color: $blanco;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 a {
@@ -30,7 +45,10 @@ picture {
     display: block;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4 {
     font-family: $fuente_principal;
     margin: calc($separacion / 2) 0;
     font-weight: 300;
@@ -40,12 +58,27 @@ h1, h2, h3 {
 h1 {
     font-size: 3.8rem;
 }
+
 h2 {
     font-size: 3.4rem;
 }
+
 h3 {
     font-size: 3rem;
 }
+
 h4 {
     font-size: 2.6rem;
+}
+
+.fondo-imagen {
+    background-image: url(/build/img/app/fondo-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.degradado-azul{
+    background-color: $azulc;
 }

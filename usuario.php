@@ -4,13 +4,23 @@
     $db = conectarDb();
 
     //Crear un email y password
-    $email = "correo@correo.com";
-    $password = "123456";
+    $pnombre = "Admin";
+    $snombre = "";
+    $papellido = "System";
+    $sapellido = "";
+    $identificacion = 123456789;
+    $usuario = "system";
+    $password = "santana";
+    $email = "system@correo.com";
+    $estado = 1;
+    $roles_id = 1;
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
+    $query = "INSERT INTO usuarios (pnombre, snombre, papellido, sapellido, identificacion, usuario, password, email, estado, roles_id) VALUES ('${pnombre}', '${snombre}', '${papellido}', '${sapellido}', ${identificacion},'${usuario}', '${passwordHash}', '${email}', ${estado}, ${roles_id});";
 
     //Query para crear usuario
 
-    $query = "INSERT INTO usuarios (email, password) VALUES ('${email}', '${passwordHash}');";
+    // $query = "INSERT INTO usuarios (email, password) VALUES ('${email}', '${passwordHash}');";
     echo $query;
     //Ingresarlo a la base de datos
     mysqli_query($db, $query);

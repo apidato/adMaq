@@ -2,6 +2,7 @@
     margin-top: calc($separacion / 2) 0;
     margin-bottom: calc($separacion / 2) 0;
 }
+
 .contenido-centrado {
     max-width: 80rem;
 }
@@ -11,6 +12,31 @@
     justify-content: flex-end;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
+}
+
+.gradiente {
+    background: rgb(1, 59, 106);
+    background: -moz-linear-gradient(180deg, rgba(1, 59, 106, 1) 0%, rgba(0, 96, 172, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(1, 59, 106, 1) 0%, rgba(0, 96, 172, 1) 100%);
+    background: linear-gradient(180deg, rgba(1, 59, 106, 1) 0%, rgba(0, 96, 172, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#013b6a", endColorstr="#0060ac", GradientType=1);
+}
+
+.flex-end{
+    display: flex;
+    justify-content: end;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

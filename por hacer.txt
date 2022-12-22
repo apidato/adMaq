@@ -1,0 +1,2 @@
+- revisar botones login, acho <div class="alert
+- validar que usuario sea unico en base de datos

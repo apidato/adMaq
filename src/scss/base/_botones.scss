@@ -26,3 +26,63 @@
 .boton-azul-block {
     @include boton($azul, block);
 }
+
+.boton-sesion {
+    background-color: $verde;
+    color: $gris;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1.2rem;
+    text-align: center;
+    margin:  1.5rem 0 0 0;    
+    border: none;
+    border-radius: .5rem;
+    width: 50%;
+
+    &:hover {
+        background-color: darken($verde, 5);
+        cursor: pointer;
+        color: $blanco;
+    }
+}
+
+.boton-eliminar{
+    background-color: $blanco;
+    color: $azul;
+    font-weight: none;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    margin:  .2rem 0 0 0;  
+    padding: .2rem 0;  
+    border: none;
+    display: inline-block;
+    border-radius: .2rem;
+
+    &:hover {
+        background-color: darken($blanco, 5);
+        cursor: pointer;
+        color: $rojo;
+    }
+}
+
+.boton-editar{
+    background-color: $blanco;
+    color: $azul;
+    font-weight: none;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    margin:  .2rem 0 0 0;  
+    padding: .2rem 0;  
+    border: none;
+    display: inline-block;
+    border-radius: .2rem;
+
+    &:hover {
+        background-color: darken($blanco, 5);
+        cursor: pointer;
+        color: $verde;
+    }
+}
+

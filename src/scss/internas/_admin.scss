@@ -1,37 +1,74 @@
 .alerta {
-    padding: .5rem;
+    padding: .5rem 0 0 0;
     text-align: center;
-    color: $blanco;
     font-weight: bold;
-    text-transform: uppercase;
-    margin: 1rem 0;
+    text-transform: none;
+    margin: .5em 0;
+
 
     &.error {
-        background-color: $rojo;
+        background-color: $rosa;
+        color: $rojo;
     }
 
     &.exito {
         background-color: $verde;
+        color: $blanco;
     }
-}
 
-table.propiedades{
-    margin-top: 4rem;
-    width: 100%;
-    border-spacing: 0;
-
-    thead{
-        background-color: $verde;
-        th{
-            color: $blanco;
-            padding: 2rem;
-        }
-    }
-    .imagen-tabla{
-        width: 10rem;
+    &.error-login{
+        background-color: $rosa;
+        color: $rojo;
     }
 }
 
 .imagen-small{
-       width: 20rem; 
+    width: 20rem;
 }
+
+table.informe{
+    margin-top: 1rem;
+    width: 100%;
+    border-spacing: 0;
+
+    thead{
+        background-color: $azul;
+        width: 25%;
+        th{
+            color: $blanco;
+            padding: .2rem;
+        }
+    }
+
+    tbody{
+        tr{
+            td{
+                border: 1px solid $gris;
+                width: inherit;
+                background-color: $blanco;
+                padding: .1rem .5rem;
+
+                span{
+                    color: $azul;
+                    padding: .2rem 0;
+                }
+            }
+        }
+        img{
+            width: 5rem;
+            margin: auto;
+        }
+    }
+    .imagen-tabla{
+        width: 5rem;
+    }
+}
+
+.boton-imagen{
+    height: 5rem;
+    width: inherit;
+    display: inline;
+    margin: 0 1rem 0 0;
+}
+
+/*Usuarios, empresas equipos*/

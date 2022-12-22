@@ -1,4 +1,15 @@
 .formulario {
+
+    legend{
+        color: $azul;
+    }
+
+    fieldset{
+        border-radius: 1rem;
+        border: 1px solid $azul;
+        color: $azul;
+    }
+
     margin-bottom: 2rem;
     p {
         font-size: 1.4rem;
@@ -13,7 +24,7 @@
 
     label {
         font-weight: $bold;
-        text-transform: uppercase;
+        text-transform: none;
         display: block;
     }
     input:not([type="submit"]), 
@@ -26,6 +37,7 @@
         border: 1px solid $gris;
         border-radius: 1rem;
         margin-bottom: 2rem;
+
     }
 
     textarea {
@@ -42,4 +54,14 @@
         margin: 0;
         width: auto;
     }
+
+}
+
+.formulario-login{
+    padding: 2rem;
+}
+
+.logo{
+    width: 15rem;
+    margin: 2rem auto;
 }
